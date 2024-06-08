@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import { generateAnswer } from "./prompt"
 import { List, Input, Avatar } from 'antd';
 
@@ -22,13 +21,13 @@ const CustomAvaTar = () => (
 )
 
 const ChatPage = () => {
-  const data = [
-    'Racing car sprays burning fuel into crowd.',
-    'Japanese princess to wed commoner.',
-    'Australian walks 100km after outback crash.',
-    'Man charged over missing wedding girl.',
-    'Los Angeles battles huge wildfires.',
-  ];
+  // const data = [
+  //   'Racing car sprays burning fuel into crowd.',
+  //   'Japanese princess to wed commoner.',
+  //   'Australian walks 100km after outback crash.',
+  //   'Man charged over missing wedding girl.',
+  //   'Los Angeles battles huge wildfires.',
+  // ];
 
   const [chats, setChats] = useState<string[]>([]);
   const [loading, setLoading] = useState(false);
